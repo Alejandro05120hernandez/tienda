@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Laptops Gamer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🔥 Tienda de Laptops Gamer 🔥</h1>
+        <button onclick="window.location.href='inicio.html'">Iniciar Sesión</button>
+        <h2 id="usuarioBienvenida"></h2>
+    </header>
+
+    <main>
+        <section class="seccion">
+            <h2>💻 Laptops Gaming</h2>
+
+            <div class="productos">
+                <div class="producto">
+                    <img src="img/laptop1.jpg" alt="ASUS ROG Strix">
+                    <h3>ASUS ROG Strix</h3>
+                    <p>$1,500</p>
+                    <button onclick="agregarAlCarrito('ASUS ROG Strix', 1500)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/laptop2.jpg" alt="MSI Raider">
+                    <h3>MSI Raider</h3>
+                    <p>$1,800</p>
+                    <button onclick="agregarAlCarrito('MSI Raider', 1800)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/laptop3.jpg" alt="Alienware M15">
+                    <h3>Alienware M15</h3>
+                    <p>$2,000</p>
+                    <button onclick="agregarAlCarrito('Alienware M15', 2000)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/laptop4.jpg" alt="HP Omen">
+                    <h3>HP Omen</h3>
+                    <p>$1,700</p>
+                    <button onclick="agregarAlCarrito('HP Omen', 1700)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/laptop5.jpg" alt="Lenovo Legion">
+                    <h3>Lenovo Legion</h3>
+                    <p>$1,600</p>
+                    <button onclick="agregarAlCarrito('Lenovo Legion', 1600)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/laptop6.jpg" alt="Acer Predator">
+                    <h3>Acer Predator</h3>
+                    <p>$1,900</p>
+                    <button onclick="agregarAlCarrito('Acer Predator', 1900)">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="carrito">
+            <h2>🛒 Carrito de Compras</h2>
+            <ul id="listaCarrito"></ul>
+            <p>Total: $<span id="totalCarrito">0</span></p>
+            <button onclick="pagarCarrito()">Pagar</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
